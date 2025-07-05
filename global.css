@@ -23,11 +23,11 @@
 
 @font-face {
       font-family: 'globalFont';
-      src: url('Poppins-Medium.ttf')
+      src: url('poppins_medium.ttf')
     }
 @font-face {
       font-family: 'codeFont';
-      src: url('Cascadia-Code-Regular.ttf')
+      src: url('cascadia_code_regular.ttf')
 }
 body {
       font-family: 'globalFont' !important
