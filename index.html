@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>羽墨工坊官网</title>
+  <title>羽墨工坊</title>
   <link rel="stylesheet" href="./global.css" />
   <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css" />
   <!--<link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />-->
@@ -15,18 +15,18 @@
 
 <body class="user-select-none">
   <div class="container mt-3 bg-white">
-    <div id="loadheader"></div>
+    <div id="loadheader" class="sticky-top"></div>  <!--FOOTER-->
 
     <div id="cs" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="container p-3">
+          <div class="p-3" style="padding-bottom:0px !important">
             <div class="row">
               <div class="col-12 p-5 rounded-3"
-                style="background-image: url('./poster_3.webp'); background-size: cover; background-position: center;height: 450px;">
+                style="background-image: url('./images/poster_3.webp'); background-size: cover; background-position: center;height: 450px;">
                 <div>
                   <br />
-                  <img src="./logo_2.png" alt="logo" width="86px" height="86px" />
+                  <img src="./images/logo_2.png" alt="logo" width="86px" height="86px" />
                   <br />
                   <br />
                   <h1 class="text-b4" style="text-shadow: 0px 0px 3px rgb(80, 80, 80) !important;letter-spacing: 3px">
@@ -35,7 +35,7 @@
                     Studio.</p>
                   <br />
                   <div class="clearfix">
-                    <a href="./about.html" class="lead float-right"
+                    <a href="./pages/about.html" class="lead float-right"
                       style="text-shadow: 0px 0px 2px rgb(0, 0, 0) !important;color:var(--color-a-2) !important">什么是羽墨？</a>
                   </div>
 
@@ -43,7 +43,7 @@
                 </div>
 
               </div>
-              <p class="text-secondary text-end" style="font-size:10px;">背景建筑：芸州 云觉寺</p>
+              <p class="text-secondary text-end" style="font-size:10px;margin-bottom:0px !important">背景建筑：芸州 云觉寺</p>
             </div>
           </div>
         </div>
@@ -89,26 +89,28 @@
           </div>-->
       </div>
     </div>
-    <hr />
-
-    <div class="row g-0 border rounded " onclick="window.open(`./archive.html`)">
-      <div class="col-4">
-        <img src="./poster_1.webp" alt="..." class="w-100 h-100 img-fluid rounded-start"
-          style="object-fit:cover  !important">
-      </div>
-      <div class="col-8 p-3">
-        <h4 class="card-title">免费开放</h4>
-        <p class="card-text">羽墨工坊先前所有项目包括建筑、皮肤均已改为免费并上传至我的世界和此网站，可供大家下载。</p>
-        <code class="text-a2">7月15日 点击查看</code>
-      </div>
-    </div>
-
-    <!--<p class="text-center text-warning fw-bold">测试版本</p>-->
-    <div style="height:13px"></div>
+    <hr style="margin-top:10px !important" />
+    <div class="position-relative border rounded overflow-hidden" 
+     onclick="window.open('./pages/archive.html')">
+  <img src="./images/poster_1.webp" 
+       class="position-absolute top-0 start-0 w-100 h-100" 
+       style="object-fit: cover;" 
+       alt="background">
+  <div class="position-relative ms-auto p-3" 
+       style="width: 65%; background: rgba(255,255,255,0.4); backdrop-filter: blur(2px);">
+    <h4 class="card-title">免费开放</h4>
+    <p class="card-text">羽墨工坊先前所有项目包括建筑、皮肤均已改为免费并上传至我的世界和此网站，可供大家下载。</p>
+    <code class="text-a2">7月15日 点击查看</code>
   </div>
 
-  <div id="loadfooter"></div>
-  <script src="./global.js"></script>
+</div>
+
+    <!--<p class="text-center text-warning fw-bold">测试版本</p>-->
+    <div style="height: 32px;"></div>
+  </div>
+
+  <div id="loadfooter"></div>  <!--FOOTER-->
+  <script src="global.js"></script>
 </body>
 
 </html>

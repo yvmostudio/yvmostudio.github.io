@@ -19,11 +19,11 @@
 
 @font-face {
       font-family: 'globalFont';
-      src: url('poppins_medium.ttf')
+      src: url('./fonts/poppins_medium.ttf')
     }
 @font-face {
       font-family: 'codeFont';
-      src: url('cascadia_code_regular.ttf')
+      src: url('./fonts/cascadia_code_regular.ttf')
 }
 body {
       font-family: 'globalFont' !important
@@ -31,8 +31,8 @@ body {
 code {
       font-family: 'codeFont' !important
 }
-* {
-    animation: fadeIn 0.3s ease-in-out;
+p, a, pre, code {
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 .bg-a1 {

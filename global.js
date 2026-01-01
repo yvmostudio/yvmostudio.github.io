@@ -1,15 +1,15 @@
-fetch('./_header.html')
+fetch('/pages/_header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('loadheader').innerHTML = data;
     });
-fetch('./_footer.html')
+fetch('/pages/_footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('loadfooter').innerHTML = data;
     });
 function qqun() {
 	const link = document.getElementById('qqun');
-      navigator.clipboard.writeText('1135829543');
-      link.textContent = '已复制';
+      navigator.clipboard.writeText('799859562');
+      link.textContent = '✓  已复制';
 	}
